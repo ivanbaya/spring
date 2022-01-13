@@ -13,8 +13,14 @@ public class Uf4SpringApplication {
 
     @GetMapping("/")
     @ResponseBody
-    String hola(String nom) {
-        return "Hola !"+nom;
+    String hola() {
+        return "Hola Ivan!";
+    }
+
+    @GetMapping("/imprimirArray")
+    @ResponseBody
+    String[] array() {
+        return new String[]{"Ani", "Sam", " Joe"};
     }
     public static void main(String[] args) {
         SpringApplication.run(Uf4SpringApplication.class, args);
