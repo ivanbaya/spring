@@ -26,8 +26,8 @@ public class Uf4SpringApplication {
 
     @GetMapping("/imprimirArray")
     public String hello(Model model) {
-        model.addAttribute("list", Arrays.asList(1, 2, 3));
-        return "hello";
+        model.addAttribute("list", Arrays.asList("manolo", "ramon", "cometacos"));
+        return "imprimirArray";
     }
     public static void main(String[] args) {
         SpringApplication.run(Uf4SpringApplication.class, args);
