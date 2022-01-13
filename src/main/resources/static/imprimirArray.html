@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>imprimirArray</title>
 </head>
 <body>
-    <form action ="imprimirArray" method="post">
-        <input type="sumbit"/>
-    </form>
+    <div th:text="${list[0]}"></div>
+    <div th:text="${list[1]}"></div>
+    <div th:text="${list[2]}"></div>
 </body>
 </html>
