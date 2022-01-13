@@ -23,7 +23,6 @@ public class Uf4SpringApplication {
         return modelAndView;
     }
 
-
     @GetMapping("/imprimirArray")
     public String hello(Model model) {
         model.addAttribute("list", Arrays.asList("manolo", "ramon", "cometacos"));
